@@ -265,6 +265,8 @@ header {
 
 @media screen and (min-width: 960px) {
   body {
+    overflow-x: hidden;
+
     /* font-size: 18px; */
   }
 }
@@ -273,6 +275,8 @@ header {
 
 @media screen and (min-width: 1200px) {
   body {
+    overflow-x: hidden;
+
     /* font-size: 20px; */
   }
 }
