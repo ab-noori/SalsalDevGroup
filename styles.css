@@ -1,5 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
+/* Variables ------------------------------------------------------------------- */
+:root {
+  --base-color: #d3d3d3;
+  --primary-color: #ec5242;
+  --secondary-color: #272a31;
+}
+
+/* Reset ------------------------------------------------------------------------ */
+
+a,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+/* Base Styles ------------------------------------------------------------------- */
+
 * {
   box-sizing: border-box;
 }
@@ -7,6 +30,249 @@
 body {
   margin: 0;
   padding: 0;
+  background: var(--base-color);
   font-family: "Lato", "Inter", "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
   overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+section {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Mobile styles ------------------------------------------------------------------ */
+
+header,
+section,
+footer {
+  max-width: 758px;
+  margin: 0 auto;
+  padding: 0.3em;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+
+header {
+  padding: 1% 2%;
+  background: url("images/mobile_intro_bg.png");
+  background-position: top;
+}
+
+.navbar .nav-branding,
+.navbar .fa-xmark,
+.navbar ul {
+  display: none;
+}
+
+.navbar span {
+  font-size: 2.5em;
+  color: #2b2d31;
+}
+
+/* ----------------------------------------- Welcome section ---------------------------------------------- */
+
+.welcome {
+  background: url("images/mobile_intro_bg.png");
+}
+
+.welcome-text > span,
+.welcome-text > h1,
+.welcome-text > p,
+.welcome-text > div {
+  grid-column: 1/13;
+}
+
+.welcome-text {
+  margin-top: 5%;
+  padding: 5%;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.welcome-text h1 {
+  font-size: 2em;
+  font-weight: 800;
+  line-height: 1em;
+}
+
+.welcome-text > span {
+  font-size: 1.5em;
+  line-height: 2em;
+}
+
+.welcome-text p {
+  color: var(--secondary-color);
+  padding: 3%;
+  width: 90%;
+  border: 3px solid white;
+  border-radius: 5px;
+}
+
+.welcome-text h1,
+.welcome-text > span {
+  color: var(--primary-color);
+}
+
+.location-time > span {
+  font-size: 1.5em;
+  font-weight: 900;
+  line-height: 1em;
+  color: var(--secondary-color);
+}
+
+/* ----------------------------------------- Main Program ---------------------------------------------- */
+
+.main-program {
+  padding: 2%;
+  background: url("images/main-background-icon.PNG");
+}
+
+.main-program h1 {
+  color: white;
+  border-bottom: 2px solid #ec5242;
+}
+
+.program-carts {
+  row-gap: 10px;
+}
+
+.program-cart {
+  grid-column: 1/13;
+  padding: 5px;
+  background-color: rgba(255, 255, 255, 0.1);
+  display: flex;
+  gap: 10px;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.program-cart > img {
+  width: 50px;
+  margin: 1%;
+  justify-self: center;
+}
+
+.program-cart > div {
+  width: 25%;
+  color: var(--primary-color);
+}
+
+.program-cart > p {
+  width: 60%;
+  color: #fff;
+}
+
+.cart-title {
+  font-size: 1.1em;
+  font-weight: 600;
+  line-height: 1em;
+  color: var(--primary-color);
+}
+
+.main-program button {
+  border: none;
+  color: white;
+  padding: 15px 20px;
+  cursor: pointer;
+  background-color: var(--primary-color);
+}
+
+/* ----------------------------------------- Developer Section ---------------------------------------------- */
+
+.developer-section {
+  padding: 3% 1%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 40px;
+  background-color: white;
+}
+
+.developer-section h1 {
+  color: var(--secondary-color);
+  border-bottom: 2px solid #ec5242;
+}
+
+.dev-carts {
+  gap: 20px;
+}
+
+.dev-cart {
+  grid-column: 1/13;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.dev-cart > span {
+  background: url("images/chessboard-mobile.PNG");
+  background-repeat: no-repeat;
+}
+
+.dev-cart > span img {
+  margin: 15px 0 0 15px;
+}
+
+.dev-details {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.dev-title {
+  color: var(--primary-color);
+}
+
+.developer-section button {
+  width: 90%;
+  padding: 2.5%;
+  cursor: pointer;
+  background-color: var(--base-color);
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+
+.fa-chevron-down {
+  color: var(--primary-color);
+  font-weight: 900;
+}
+
+/* Viewports wider then 620px ---------------------------------------------------- */
+
+@media screen and (min-width: 620px) {
+  body {
+    overflow-x: hidden;
+  }
+}
+
+/* Viewports wider then 960px --------------------------------------------------- */
+
+@media screen and (min-width: 960px) {
+  body {
+    /* font-size: 18px; */
+  }
+}
+
+/* Viewports wider then 1200px ------------------------------------------------- */
+
+@media screen and (min-width: 1200px) {
+  body {
+    /* font-size: 20px; */
+  }
 }
