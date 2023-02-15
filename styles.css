@@ -50,6 +50,18 @@ section {
   align-items: center;
 }
 
+.underline-sm {
+  width: 6%;
+  height: 2px;
+  background-color: var(--primary-color);
+}
+
+.underline-md {
+  width: 4%;
+  height: 2px;
+  background-color: var(--primary-color);
+}
+
 /* Mobile styles ------------------------------------------------------------------ */
 
 header,
