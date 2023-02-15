@@ -14,17 +14,10 @@ footer {
   align-items: center;
 }
 
-.about-header,
 .about-section {
   background: url("images/about_bg_01.png");
   background-size: 100%;
   background-color: rgb(235, 235, 235);
-}
-
-.about-section {
-  background-size: 100% 45%;
-  background-repeat: no-repeat;
-  background-position: top;
 }
 
 .about-container {
