@@ -32,7 +32,6 @@ body {
   padding: 0;
   background: var(--base-color);
   font-family: "Lato", "Inter", "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
-  overflow-x: hidden;
 }
 
 h1,
@@ -67,9 +66,8 @@ section {
 header,
 section,
 footer {
-  max-width: 758px;
   margin: 0 auto;
-  padding: 0.3em;
+  padding: 20px 0.3em;
 }
 
 .grid {
@@ -78,9 +76,17 @@ footer {
 }
 
 header {
-  padding: 1% 2%;
-  background: url("images/mobile_intro_bg.png");
-  background-position: top;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  width: 100%;
+  padding: 0;
+}
+
+.navbar {
+  padding: 1% 5%;
 }
 
 .navbar .nav-branding,
@@ -98,6 +104,7 @@ header {
 
 .welcome {
   background: url("images/mobile_intro_bg.png");
+  background-size: 100%;
 }
 
 .welcome-text > span,
@@ -132,6 +139,7 @@ header {
   padding: 3%;
   width: 90%;
   border: 3px solid white;
+  background-color: #ebebeb;
   border-radius: 5px;
 }
 
@@ -265,11 +273,95 @@ header {
   font-weight: 900;
 }
 
+footer {
+  display: none;
+}
+
 /* Viewports wider then 620px ---------------------------------------------------- */
 
-@media screen and (min-width: 620px) {
+@media screen and (min-width: 768px) {
   body {
-    overflow-x: hidden;
+    font-size: 20px;
+  }
+
+  /* .welcome-text,
+  .program-carts,
+  .dev-carts,
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  } */
+
+  .welcome {
+    background: url("images/main_big.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
+
+  .footer-container img {
+    width: 100px;
+  }
+
+  .navbar .nav-branding {
+    display: flex;
+  }
+
+  .navbar .nav-branding img {
+    border-radius: 8px;
+  }
+
+  .navbar {
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--secondary-color);
+    background-color: white;
+  }
+
+  .navbar ul {
+    display: flex;
+    gap: 25px;
+  }
+
+  .welcome-text {
+    gap: 30px;
+    max-width: 70%;
+    align-self: flex-start;
+  }
+
+  .navbar ul * {
+    color: var(--secondary-color);
+  }
+
+  .navbar ul li a:hover {
+    color: var(--primary-color);
+  }
+
+  .navbar .fa-bars {
+    display: none;
+  }
+
+  .developer-section button {
+    display: none;
+  }
+
+  footer {
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--base-color);
+    background-color: var(--secondary-color);
+  }
+
+  .footer-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
   }
 }
 
