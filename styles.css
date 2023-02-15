@@ -50,13 +50,13 @@ section {
 }
 
 .underline-sm {
-  width: 6%;
+  width: 8%;
   height: 2px;
   background-color: var(--primary-color);
 }
 
-.underline-md {
-  width: 4%;
+.underline-xs {
+  width: 6%;
   height: 2px;
   background-color: var(--primary-color);
 }
@@ -163,8 +163,12 @@ header {
 }
 
 .main-program h1 {
+  margin-top: 3%;
   color: white;
-  border-bottom: 2px solid #ec5242;
+}
+
+.main-program :nth-child(2) {
+  margin-bottom: 2%;
 }
 
 .program-carts {
@@ -177,6 +181,8 @@ header {
   background-color: rgba(255, 255, 255, 0.1);
   display: flex;
   gap: 10px;
+  font-size: 1em;
+  font-weight: normal;
   justify-content: flex-start;
   align-items: center;
 }
@@ -207,9 +213,14 @@ header {
 .main-program button {
   border: none;
   color: white;
+  margin: 3%;
   padding: 15px 20px;
   cursor: pointer;
   background-color: var(--primary-color);
+}
+
+.main-program > a {
+  display: none;
 }
 
 /* ----------------------------------------- Developer Section ---------------------------------------------- */
@@ -284,14 +295,6 @@ footer {
     font-size: 20px;
   }
 
-  /* .welcome-text,
-  .program-carts,
-  .dev-carts,
-  .footer-container {
-    max-width: 1200px;
-    margin: 0 auto;
-  } */
-
   .welcome {
     background: url("images/main_big.png");
     background-size: 100% 100%;
@@ -304,6 +307,12 @@ footer {
 
   .navbar .nav-branding {
     display: flex;
+  }
+
+  .program-cart > img {
+    width: unset;
+    margin: auto;
+    justify-self: center;
   }
 
   .navbar .nav-branding img {
@@ -330,6 +339,17 @@ footer {
     align-self: flex-start;
   }
 
+  .main-program > button {
+    display: none;
+  }
+
+  .main-program > a {
+    display: block;
+    color: var(--base-color);
+    margin: 3%;
+    border-bottom: 2px solid white;
+  }
+
   .navbar ul * {
     color: var(--secondary-color);
   }
@@ -340,6 +360,35 @@ footer {
 
   .navbar .fa-bars {
     display: none;
+  }
+
+  .program-carts {
+    display: grid;
+    width: 80%;
+    grid-template-columns: repeat(5, 20%);
+    gap: 5px;
+    cursor: pointer;
+  }
+
+  .program-cart {
+    grid-column: span 1;
+    flex-direction: column;
+    padding: 25px 10px 40px;
+  }
+
+  .program-cart:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+
+  .program-cart > div {
+    width: unset;
+    color: var(--primary-color);
+  }
+
+  .program-cart > p {
+    width: 100%;
+    text-align: center;
+    color: #fff;
   }
 
   .developer-section button {
