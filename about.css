@@ -15,9 +15,11 @@ footer {
 }
 
 .about-section {
+  margin-top: 70px;
   background: url("images/about_bg_01.png");
   background-size: 100%;
-  background-color: rgb(235, 235, 235);
+  background-color: var(--base-color);
+  background-repeat: no-repeat;
 }
 
 .about-container {
@@ -47,7 +49,7 @@ footer {
 
 .about-text {
   color: var(--secondary-color);
-  padding: 3%;
+  padding: 2%;
   width: 85%;
   font-size: 1.1em;
   line-height: 1.5em;
@@ -78,7 +80,7 @@ footer {
 }
 
 .logo-details {
-  width: 70%;
+  max-width: 70%;
   gap: 10px;
   display: flex;
   flex-direction: column;
@@ -120,6 +122,7 @@ span {
 .second-project {
   width: 100%;
   height: 40vh;
+  padding: 3%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -152,7 +155,7 @@ footer {
   background-color: var(--secondary-color);
 }
 
-.footer-container {
+.footer-partners {
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
@@ -160,6 +163,72 @@ footer {
   align-items: center;
 }
 
-.footer-container > * {
+.footer-partners > * {
   width: 100px;
+}
+
+.copyright-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.copyright-text {
+  color: var(--secondary-color);
+  font-size: 0.8em;
+  font-weight: 800;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.copyright-text h3 {
+  font-size: 1.2em;
+  font-weight: bolder;
+}
+
+.logo-details p span {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .about-section {
+    background: url("images/about_bg_01.png");
+    background-size: 100%;
+    background-color: var(--base-color);
+    background-repeat: no-repeat;
+  }
+
+  .logo-details p span {
+    display: unset;
+  }
+
+  .logo-image {
+    max-width: 50%;
+  }
+
+  .logo-details {
+    max-width: 50%;
+  }
+
+  .about-container {
+    max-width: 70%;
+  }
+
+  .project-images {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .copyright-container,
+  footer {
+    display: none;
+  }
 }
