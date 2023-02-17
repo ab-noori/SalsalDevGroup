@@ -229,7 +229,26 @@ footer {
     gap: 30px;
   }
 
-  .copyright-container,
+  .copyright {
+    background-color: var(--secondary-color);
+  }
+
+  .copyright-logo {
+    width: 200px;
+    height: 60px;
+    background-image: url("images/footer-logo.PNG");
+    background-size: 100% 100%;
+    background-position: left;
+  }
+
+  .copyright-container .copyright-text {
+    color: var(--base-color);
+  }
+
+  .copyright-logo img {
+    display: none;
+  }
+
   footer {
     display: none;
   }
