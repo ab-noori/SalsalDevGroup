@@ -13,7 +13,7 @@
 
 | Mobile version representation. |
 |---------------------------------------|
-|<div align="center"><img src="./images/project-shoots/mobile1.PNG" alt="logo" width="325"  height="auto"/><img src="./images/project-shoots/mobile2.PNG" alt="logo" width="325"  height="auto"/><img src="./images/project-shoots/mobile3.PNG" alt="logo" width="325"  height="auto"/></div>|
+|<div align="center"><img src="./images/project-shoots/mobile1.PNG" alt="logo" width="300"  height="auto"/><img src="./images/project-shoots/mobile3.PNG" alt="logo" width="300"  height="auto"/><img src="./images/project-shoots/mobile2.PNG" alt="logo" width="300"  height="auto"/></div>|
 
 
 <!-- TABLE OF CONTENTS -->
@@ -61,19 +61,13 @@
 
 ### Key Features <a name="key-features"></a>
 
-> Describe between 1-3 key features of the application.
-
-- **[key_feature_1]**
-- **[key_feature_2]**
-- **[key_feature_3]**
+- **[Responsive layout]**
+- **[UX/UI accessibility]**
+- **[Dynamic data]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- LIVE DEMO -->
-
 ## 🚀 Live Demo <a name="live-demo"></a>
-
-> Add a link to your deployed project.
 
 - [Live Demo Link](https://ab-noori.github.io/SalsalDevGroup/)
 
