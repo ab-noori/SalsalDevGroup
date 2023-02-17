@@ -1,38 +1,20 @@
 <a name="readme-top"></a>
+![](https://img.shields.io/badge/Microverse-blueviolet)
 
-<!--
-HOW TO USE:
-This is an example of how you may give instructions on setting up your project locally.
+> Salsal Developers Group Website
+## Description 
 
-Modify this file to match your project and remove sections that don't apply.
+| Desktop version representation.|
+|---------------------------------------|
+|![screenshot](./images/project-shoots/Homepage1.PNG)|
+|![screenshot](./images/project-shoots/Homepage2.PNG)|
+|![screenshot](./images/project-shoots/Homepage3.PNG)|
+|![screenshot](./images/project-shoots/about1.PNG)|
 
-REQUIRED SECTIONS:
-- Table of Contents
-- About the Project
-  - Built With
-  - Live Demo
-- Getting Started
-- Authors
-- Future Features
-- Contributing
-- Show your support
-- Acknowledgements
-- License
+| Mobile version representation. |
+|---------------------------------------|
+|<div align="center"><img src="./images/project-shoots/mobile1.PNG" alt="logo" width="325"  height="auto"/><img src="./images/project-shoots/mobile2.PNG" alt="logo" width="325"  height="auto"/><img src="./images/project-shoots/mobile3.PNG" alt="logo" width="325"  height="auto"/></div>|
 
-OPTIONAL SECTIONS:
-- FAQ
-
-After you're finished please remove all the comments and instructions!
--->
-
-<div align="center">
-  <!-- You are encouraged to replace this logo with your own! Otherwise you can also remove it. -->
-  <img src="images/project-image.png" alt="logo" width="500"  height="auto" />
-  <br/>
-
-  <h3><b>Template Repository</b></h3>
-
-</div>
 
 <!-- TABLE OF CONTENTS -->
 
@@ -60,40 +42,22 @@ After you're finished please remove all the comments and instructions!
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [your_project_name] <a name="about-project"></a>
+# 📖 [SalsalDevGroup] <a name="about-project"></a>
 
-> Describe your project in 1 or 2 sentences.
+> **[SalsalDevGroup Website]** is a project to showcase the Salsal Developers group recent projects. It will maitain the information and history of the group recent projects, the brave biography of each developer, and the link to recent projects. it will also provide the context for receiving proposals and contacting the clients in its future features.
 
 **[your_project__name]** is a...
 
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
+- <summary>Client</summary>
+    <ul>
+      <li><a href="https://reactjs.org/">HTML</a></li>
+      <li><a href="https://reactjs.org/">CSS</a></li>
+      <li><a href="https://reactjs.org/">jAVASCRIPT</a></li>
+    </ul>
 
-> Describe the tech stack and include only the relevant sections that apply to your project.
-
-<details>
-  <summary>Client</summary>
-  <ul>
-    <li><a href="https://reactjs.org/">React.js</a></li>
-  </ul>
-</details>
-
-<details>
-  <summary>Server</summary>
-  <ul>
-    <li><a href="https://expressjs.com/">Express.js</a></li>
-  </ul>
-</details>
-
-<details>
-<summary>Database</summary>
-  <ul>
-    <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
-  </ul>
-</details>
-
-<!-- Features -->
 
 ### Key Features <a name="key-features"></a>
 
