@@ -104,7 +104,7 @@ header {
 
 .navbar span {
   font-size: 2.5em;
-  color: #2b2d31;
+  color: var(--secondary-color);
 }
 
 .navbar ul li {
@@ -116,7 +116,7 @@ header {
 }
 
 .navbar ul li a {
-  color: #4a3a3b;
+  color: var(--primary-color);
   font-size: 2rem;
   font-weight: 600;
   text-decoration: none;
@@ -126,13 +126,13 @@ header {
   width: 100%;
   height: 100vh;
   position: fixed;
-  top: 50px;
+  top: 61px;
   left: -100%;
   z-index: 10;
   display: flex;
   padding: 10%;
   flex-direction: column;
-  background-color: white;
+  background-color: var(--base-color);
   justify-content: flex-start;
   align-items: flex-start;
   transition: 0.5s ease;
@@ -164,7 +164,7 @@ header {
   width: 22px;
   height: 2px;
   margin: 5px auto;
-  background-color: #67798e;
+  background-color: var(--secondary-color);
   transform: translateY(8px) rotate(45deg);
 }
 
@@ -172,7 +172,7 @@ header {
   width: 22px;
   height: 2px;
   margin: 5px auto;
-  background-color: #67798e;
+  background-color: var(--secondary-color);
   transform: translateY(-8px) rotate(-45deg);
 }
 
