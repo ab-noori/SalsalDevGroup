@@ -32,6 +32,8 @@ body {
   padding: 0;
   background: var(--base-color);
   font-family: "Lato", "Inter", "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 h1,
@@ -86,7 +88,7 @@ header {
 }
 
 .navbar {
-  height: 70px;
+  height: 60px;
   padding: 1% 5%;
   display: flex;
   justify-content: space-between;
@@ -95,8 +97,7 @@ header {
   background-color: white;
 }
 
-.navbar .nav-branding,
-.navbar .fa-xmark,
+.nav-branding,
 .navbar ul {
   display: none;
 }
@@ -106,10 +107,88 @@ header {
   color: #2b2d31;
 }
 
+.navbar ul li {
+  list-style: none;
+}
+
+.main-program > a {
+  display: none;
+}
+
+.navbar ul li a {
+  color: #4a3a3b;
+  font-size: 2rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.navbar ul {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 50px;
+  left: -100%;
+  z-index: 10;
+  display: flex;
+  padding: 10%;
+  flex-direction: column;
+  background-color: white;
+  justify-content: flex-start;
+  align-items: flex-start;
+  transition: 0.5s ease;
+}
+
+.nav-link {
+  transition: 0.7s ease;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: var(--secondary-color);
+}
+
+.hamburger {
+  cursor: pointer;
+}
+
+.hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(1) {
+  width: 22px;
+  height: 2px;
+  margin: 5px auto;
+  background-color: #67798e;
+  transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(3) {
+  width: 22px;
+  height: 2px;
+  margin: 5px auto;
+  background-color: #67798e;
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+.nav-item {
+  margin: 16px 0;
+}
+
+.nav-menu.active {
+  right: 0;
+  left: 0;
+}
+
 /* ----------------------------------------- Welcome section ---------------------------------------------- */
 
 .welcome {
-  margin-top: 70px;
+  margin-top: 60px;
   background: url("images/mobile_intro_bg.png");
   background-size: 100%;
 }
@@ -170,11 +249,12 @@ header {
 }
 
 .main-program h1 {
-  margin-top: 3%;
+  margin-top: 2%;
   color: white;
 }
 
-.main-program :nth-child(2) {
+.main-program span {
+  margin-top: -1%;
   margin-bottom: 2%;
 }
 
@@ -226,10 +306,6 @@ header {
   background-color: var(--primary-color);
 }
 
-.main-program > a {
-  display: none;
-}
-
 /* ----------------------------------------- Developer Section ---------------------------------------------- */
 
 .developer-section {
@@ -242,6 +318,7 @@ header {
 }
 
 .developer-section h1 {
+  margin: 2%;
   color: var(--secondary-color);
   border-bottom: 2px solid #ec5242;
 }
@@ -296,6 +373,10 @@ footer {
   display: none;
 }
 
+.hidden {
+  display: none !important;
+}
+
 /* ---------------------------------Viewports wider then 768px --------------------------------------- */
 
 @media screen and (min-width: 768px) {
@@ -304,6 +385,7 @@ footer {
   }
 
   .welcome {
+    margin-top: 70px;
     background: url("images/main_big.png");
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -313,7 +395,11 @@ footer {
     width: 100px;
   }
 
-  .navbar .nav-branding {
+  .navbar {
+    height: 70px;
+  }
+
+  .nav-branding {
     display: flex;
   }
 
@@ -323,13 +409,40 @@ footer {
     justify-self: center;
   }
 
-  .navbar .nav-branding img {
+  .nav-branding img {
     border-radius: 8px;
   }
 
+  .nav-link:hover {
+    color: var(--primary-color);
+  }
+
+  .hamburger {
+    display: none;
+  }
+
   .navbar ul {
-    display: flex;
-    gap: 25px;
+    height: 40px;
+    position: static;
+    width: unset;
+    flex-direction: row;
+    background-color: unset;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+  }
+
+  .main-program > a {
+    display: block;
+    color: var(--base-color);
+    margin: 3%;
+    border-bottom: 2px solid white;
+  }
+
+  .navbar ul li a {
+    color: #344563;
+    font-size: 1em;
+    font-weight: 600;
   }
 
   .welcome-text {
@@ -352,23 +465,8 @@ footer {
     display: none;
   }
 
-  .main-program > a {
-    display: block;
-    color: var(--base-color);
-    margin: 3%;
-    border-bottom: 2px solid white;
-  }
-
   .navbar ul * {
     color: var(--secondary-color);
-  }
-
-  .navbar ul li a:hover {
-    color: var(--primary-color);
-  }
-
-  .navbar .fa-bars {
-    display: none;
   }
 
   .program-carts {
@@ -416,6 +514,10 @@ footer {
   .dev-cart > span {
     background: url("images/bg-chessboard-icon.png");
     background-repeat: no-repeat;
+  }
+
+  .hidden {
+    display: flex !important;
   }
 
   .developer-section button {
