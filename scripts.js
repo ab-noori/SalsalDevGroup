@@ -81,18 +81,14 @@ function generatProjectCarts() {
 
 generatProjectCarts();
 
-// ----------------------------less and more toggle-------------------------------------
-
 // --------------------------------toggle menu-------------------------------------------
 
 const hamburger = document.querySelector('.hamburger');
 const navMenu = document.querySelector('.nav-menu');
-const navBranding = document.querySelector('.nav-branding');
 
 hamburger.addEventListener('click', () => {
   hamburger.classList.toggle('active');
   navMenu.classList.toggle('active');
-  navBranding.classList.toggle('active');
 });
 
 document.querySelectorAll('.nav-link')
