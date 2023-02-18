@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.css" />
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="about.css">
+    <title>About</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar grid">
+
+            <a href="index.html" class="nav-branding"><img src="images/SDG-logo--mini.png" alt="Website logo"></a>
+
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+
+            <ul class="nav-menu">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Program</a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Join</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Sponser</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">News</a>
+                </li>
+
+            </ul>
+
+        </nav>
+        
+    </header>
+
+    <!-- Welocme section -->
+
+    <section class="about-section" >
+        <div class="about-container">
+            <span class="about-greeting">
+                "Hello Sharing World"
+            </span>
+
+            <h1 class="about-title">
+                SDG CHANGES PROJECT DELIVERY EXPERIENCE
+            </h1>
+
+            <P class="about-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, unde est rem dolorem quod deleniti repellendus. Deserunt minima officia molestias tempora iusto quae nam dolorum, illum voluptatem exercitationem mollitia nulla?
+            </P>
+
+            <div class="contact-us">
+                <p>Please contact us per email for any further questions about SDG Developers!</p>
+                <p>informations@sdg.af</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="logo-section">
+        <div class="logo-details">
+            <h1>Salsal Developers Group 2023</h1>
+            <span class="underline-sm"></span>
+            <p>
+                The Logo of SDG-Salsal Developers Group was decided through the 
+                logo competition from 15 January to 15 February of 2023 <br>
+                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     Distinctio ut amet exercitationem atque voluptatem delectus.
+                </span>
+            </p>
+        </div>
+
+        <div class="logo-image">
+            <img src="images/SDG-logo-mini.png" alt="Logo">
+        </div>
+    </section>
+
+    <section class="recent-projects">
+        <h1>See the past projects completed by SDG group</h1>
+        <span class="underline-sm"></span>
+        <p>Take a look on the last and most recent projects, that is compeleted in 2022</p>
+        <div class="project-images">
+            <a href="https://ab-noori.github.io/OnlineBookStore">
+                <div class="first-porject">
+                    <h2>MARCH 2022</h2>
+                    <p>Online Booke Store completed in March 2022</p>
+                </div>
+            </a>
+            <a href="https://ab-noori.github.io/YouTubePlayer">
+                <div class="second-project">
+                    <h2>AUGUST 2022</h2>
+                    <p>Social Video Player completed in Agust 2022</p>
+                </div>
+            </a>
+        </div>
+
+    </section>
+
+    <footer>
+        <h3>Partners</h3>
+        <span class="underline-sm"></span>
+        <div class="footer-partners">
+            <img src="images/airbnbmain.png" alt="AirBnb">
+            <img src="images/google.png" alt="AirBnb">
+            <img src="images/lumen.png" alt="AirBnb">
+            <img src="images/mozilla.png" alt="AirBnb">
+            <img src="images/naver.png" alt="AirBnb">
+        </div>
+    </footer>
+
+    <section class="copyright">
+        <div class="copyright-container">
+            <div class="copyright-logo">
+                <img src="images/copyright-logo.png" alt="logo">
+            </div>
+            <div class="copyright-text">
+                <h3>2023 SDG All right reserved</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione asperiores debitis voluptate eaque quas dolorem..</p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+
+        hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('active');
+        navMenu.classList.toggle('active');
+        });
+
+        document.querySelectorAll('.nav-link')
+        .forEach((links) => links.addEventListener('click', () => {
+            hamburger.classList.remove('active');
+            navMenu.classList.remove('active');
+        }));
+    </script>
+</body>
+</html>

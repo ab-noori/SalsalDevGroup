@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+/* Variables ------------------------------------------------------------------- */
+:root {
+  --base-color: #d3d3d3;
+  --primary-color: #ec5242;
+  --secondary-color: #272a31;
+}
+
+section,
+footer {
+  padding: 30px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-section {
+  margin-top: 70px;
+  background: url("images/about_bg_01.png");
+  background-size: 100%;
+  background-color: var(--base-color);
+  background-repeat: no-repeat;
+}
+
+.about-container {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-greeting,
+.about-title {
+  color: var(--primary-color);
+}
+
+.about-title {
+  width: 70%;
+  font-size: 2em;
+  font-weight: 800;
+  line-height: 1em;
+}
+
+.about-greeting {
+  font-size: 1.5em;
+  line-height: 2em;
+}
+
+.about-text {
+  color: var(--secondary-color);
+  padding: 2%;
+  width: 85%;
+  font-size: 1.1em;
+  line-height: 1.5em;
+  background-color: #f5f5f5;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+
+.contact-us {
+  color: var(--secondary-color);
+  padding: 3%;
+  width: 65%;
+  font-size: 1.1em;
+  line-height: 1.5em;
+}
+
+.contact-us :nth-child(2) {
+  font-weight: bolder;
+}
+
+.logo-section,
+.recent-projects {
+  background-color: white;
+}
+
+.logo-section {
+  border-bottom: 1px solid #dedbdb;
+}
+
+.logo-details {
+  max-width: 70%;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1,
+h2,
+p,
+span {
+  padding: 0 10px;
+  text-align: center;
+}
+
+.navbar > span {
+  padding: 0;
+  text-align: start;
+}
+
+.logo-image {
+  width: 80%;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #dedbdb;
+  border-radius: 3px;
+}
+
+.project-images {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.first-porject,
+.second-project {
+  width: 100%;
+  height: 40vh;
+  padding: 3%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.first-porject {
+  color: white;
+  background-image: url(images/project1.PNG);
+  background-size: 100% 40vh;
+  background-repeat: no-repeat;
+  box-shadow: inset 0 0 0 2000px rgba(105, 35, 3, 0.81);
+}
+
+.second-project {
+  color: white;
+  background: url(images/project2.PNG);
+  background-size: 100% 45vh;
+  background-repeat: no-repeat;
+  box-shadow: inset 0 0 0 2000px rgba(105, 35, 3, 0.81);
+}
+
+footer {
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--base-color);
+  background-color: var(--secondary-color);
+}
+
+.footer-partners {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-partners > * {
+  width: 100px;
+}
+
+.copyright-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.copyright-text {
+  color: var(--secondary-color);
+  font-size: 0.8em;
+  font-weight: 800;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.copyright-text h3 {
+  font-size: 1.2em;
+  font-weight: bolder;
+}
+
+.logo-details p span {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .about-section {
+    background: url("images/about_bg_01.png");
+    background-size: 100%;
+    background-color: var(--base-color);
+    background-repeat: no-repeat;
+  }
+
+  .logo-details p span {
+    display: unset;
+  }
+
+  .logo-image {
+    max-width: 50%;
+  }
+
+  .logo-details {
+    max-width: 50%;
+  }
+
+  .about-container {
+    max-width: 70%;
+  }
+
+  .project-images {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .copyright {
+    background-color: var(--secondary-color);
+  }
+
+  .copyright-logo {
+    width: 200px;
+    height: 60px;
+    background-image: url("images/footer-logo.PNG");
+    background-size: 100% 100%;
+    background-position: left;
+  }
+
+  .copyright-container .copyright-text {
+    color: var(--base-color);
+  }
+
+  .copyright-logo img {
+    display: none;
+  }
+
+  footer {
+    display: none;
+  }
+}
