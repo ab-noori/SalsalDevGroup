@@ -105,6 +105,18 @@ Install this project with:
 - To represent the most recent projects.
 - To maitain connection with clients.
 
+### Run tests
+- Run the following script and style test:
+
+      npx hint .
+      npx hint . --fix
+      
+      npx eslint .
+      npx eslint . --fix
+
+      npx stylelint "**/*.{css,scss}"
+      npx stylelint "**/*.{css,scss}" --fix
+      
 ### Deployment
 
 You can deploy this project using:
