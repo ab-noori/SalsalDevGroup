@@ -13,7 +13,7 @@
 
 | Mobile version representation |
 |---------------------------------------|
-|<div align="center"><img src="./images/project-shoots/mobile1.PNG" alt="logo" width="300"  height="auto"/><img src="./images/project-shoots/mobile3.PNG" alt="logo" width="300"  height="auto"/><img src="./images/project-shoots/mobile2.PNG" alt="logo" width="300"  height="auto"/><img src="./images/project-shoots/mobile4.PNG" alt="logo" width="300"  height="auto"/></div>|
+|<div align="center"><img src="./images/project-shoots/mobile1.PNG" alt="logo" width="300"  height="400"/><img src="./images/project-shoots/mobile3.PNG" alt="logo" width="300"  height="auto"/><img src="./images/project-shoots/mobile2.PNG" alt="logo" width="300"  height="auto"/><img src="./images/project-shoots/mobile4.PNG" alt="logo" width="300"  height="auto"/></div>|
 
 # 📗 Table of Contents
 
