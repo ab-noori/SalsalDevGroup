@@ -63,9 +63,9 @@
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🚀 Live Demo <a name="live-demo"></a>
-
-- [Live Demo Link](https://ab-noori.github.io/SalsalDevGroup/)
-- [Introduction to the project](https://www.loom.com/share/abd300bec7be47d784b3e9f6af64eab7)
+> - [Live Demo on Render](https://salsaldevgroup.onrender.com)
+> - [Live Demo on Gh-pages](https://ab-noori.github.io/SalsalDevGroup/)
+> - [Introduction to the project](https://www.loom.com/share/abd300bec7be47d784b3e9f6af64eab7)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
