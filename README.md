@@ -38,9 +38,9 @@
 
 # 📖 [SalsalDevGroup] <a name="about-project"></a>
 
-> **[SalsalDevGroup Website]** is a project to showcase the Salsal Developers group recent projects. It will maitain the information and history of the group recent projects, the brave biography of each developer, and the link to recent projects. it will also provide the context for receiving proposals and contacting the clients in its future features.
+> **[SalsalDevGroup Website]** is a project to showcase the Salsal Developers group's recent projects. It will maintain the information and history of the group's recent projects, the brave biography of each developer, and the link to recent projects. it will also provide the context for receiving proposals and contacting the clients in its future features.
 
-**[SalsalDevGroup Website]** is developed using HTML, CSS and JavaScript technologies.
+**[SalsalDevGroup Website]** is developed using HTML, CSS, and JavaScript technologies.
 
 ## 🛠 Built With <a name="built-with"></a>
 
