@@ -2,7 +2,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
 > # Salsal Developers Group Website
-### Mobile and Desktop view shoots for this project:
 
 | Desktop version representation|
 |---------------------------------------|
